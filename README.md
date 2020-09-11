@@ -20,3 +20,15 @@
   ```
 
 - [x] Test the vm by pinging it through ssh
+
+
+##### 2. Getting started with market place
+
+- [x] deploy a LAMP stack
+  `gcloud deployment-manager deployments create my-dep --config lampstack.jinja`
+  
+ - [x] verify deployment by checking into the directory
+  `cd /opt/bitnami`
+ - [x] expose the phpinfo file
+  `sudo sh -c 'echo "<?php phpinfo(); ?>" > apache2/htdocs/phpinfo.php'`
+  - [x] visit the phpinfo rule -> `http://[SITE_ADDRESS]/phpinfo.php`
